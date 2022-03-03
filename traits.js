@@ -118,8 +118,8 @@ const body = [
 
 const background = [
     {id: 1, name: 'white'}
-   ,{id: 2, name: 'blue'}
-   ,{id: 3, name: 'green'}
+   ,{id: 2, name: 'gray'}
+   ,{id: 3, name: 'dark'}
 ]
 
 exports.face = face;

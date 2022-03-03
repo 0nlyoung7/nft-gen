@@ -1,6 +1,7 @@
 const { face, body, background } = require('./traits');
+const { createImage } = require('./canvas');
 
-const NUM_OF_FACES = 35;
+const NUM_OF_FACES = 30;
 const NUM_OF_BODY = 12;
 const NUM_OF_BACKGROUND = 3;
 
@@ -52,6 +53,13 @@ while (NFTs.length < TARGET_NUM_OF_NFT) {
         NFTs.push(n);
     }
 }
+
+(async () => {
+    console.log("Creating...");
+    for (let i = 0; i < NFTs.length; i++) {
+      await createImage(NFTs[i], i);
+    }
+   })();
 
 console.log(`TOTAL_NUM_OF_NFT = ${NFTs.length}`);
 console.log(`TOTAL_NUM_OF_RARITY = ${totalCountOfRareTrait}`);

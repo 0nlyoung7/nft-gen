@@ -2,5 +2,8 @@
   "name": "nft-gen",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "canvas": "^2.9.0"
+  }
 }
