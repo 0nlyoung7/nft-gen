@@ -1,5 +1,5 @@
 const { face, body, background } = require('./traits');
-const { createImage } = require('./canvas');
+const { createPinata } = require('./createPinata');
 
 const NUM_OF_FACES = 30;
 const NUM_OF_BODY = 12;
@@ -57,7 +57,7 @@ while (NFTs.length < TARGET_NUM_OF_NFT) {
 (async () => {
     console.log("Creating...");
     for (let i = 0; i < NFTs.length; i++) {
-      await createImage(NFTs[i], i);
+      await createPinata(NFTs[i], i);
     }
    })();
 
